@@ -4,6 +4,7 @@ dangeons = defaultdict(set)
 while len(s := input().split()) == 2:
     if s[0] != s[1]:
         dangeons[s[0]].add(s[1])
+        dangeons[s[1]].add(s[0])
 
 begin = s[0]
 end = input()
