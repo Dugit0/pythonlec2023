@@ -7,13 +7,13 @@ def DefArgs(*constants):
         def my_func(*args):
             if len(args) > argc:
                 raise TypeError
+            if not all(isinstance(args[i], type(constants[i])) for i in range(len(args))):
+                raise TypeError
             args = list(args)
             for i in range(len(args), argc):
                 args.append(constants[i])
             return func(*args)
         return my_func
     return decor
-
-
 
 
