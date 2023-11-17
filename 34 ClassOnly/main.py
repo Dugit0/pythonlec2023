@@ -9,4 +9,6 @@ class Struct:
                 setattr(cls.struct.__class__, i, i)
             return cls.struct
 
-
+a = Struct()
+# print(dir(a))
+print(a.__class__.__dict__)
