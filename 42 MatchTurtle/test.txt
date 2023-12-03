@@ -1,0 +1,13 @@
+say Hello, world!
+move n
+move e
+jump
+info xy
+move n
+move base
+look around
+info x
+retreat
+retreat
+info y
+
